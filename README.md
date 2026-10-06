@@ -1,16 +1,16 @@
-# Cybersecurity and local AI
+# Security tools and local AI
 
-These are my projects in application security, local LLMs, and SOC tooling. The common thread is keeping important checks in the application instead of trusting a model to follow the rules.
+A model can suggest a tool call. The application still has to decide whether it is allowed. That is the question behind the projects here.
 
-## A few projects
+## Selected work
 
-### [Sentinel — AI Application Security Lab](https://github.com/salah199720003/sentinel-appsec-lab)
-Sentinel is a fictional support app I use to compare vulnerable and hardened tool calls. Alice belongs to Atlas; Bob belongs to Cedar. The lab covers cross-tenant reads, role-restricted ticket actions, and a scripted indirect-injection path. That replay assumes the assistant follows the malicious document—it is not a live jailbreak result.
+### [Sentinel - AI Application Security Lab](https://github.com/salah199720003/sentinel-appsec-lab)
+A small, local support app for replaying authorization failures. It uses fictional Atlas and Cedar tenants, customer and support roles, and a scripted malicious-document scenario. That replay shows what happens if an assistant follows the document; it is not a live jailbreak test.
 
 ### [Kali LLM Assistant](https://github.com/salah199720003/Kali_LLM_Assistant)
-A local assistant with separate chat and Kali shell modes. Commands and output stay visible, and multi-command tasks run through a bounded controller workflow in a lab VM.
+A local assistant that can switch between chat and a Kali VM shell. Commands and output stay visible; multi-command workflows are bounded by the controller.
 
 ### [LLM SOC Project](https://github.com/salah199720003/LLM_SOC_Project)
-Python tools for importing Sysmon XML, making and searching cases, correlating events, extracting observables, and checking Sigma rules. The Bonsai chat demo is still separate from the SOC tools.
+Python tools for importing Sysmon XML into local cases, searching and correlating events, extracting observables, and checking Sigma rules. The Bonsai chat demo is still separate from the SOC tools.
 
-Most of these are local learning projects. Each repository README explains how to run it and what it does not claim to prove.
+Each repository has its own run instructions and limits.
